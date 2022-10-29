@@ -1,5 +1,3 @@
-@jwt= eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxMDE1MTR9.yDSzV5NQWPh3coGLVhTv8aZLfp0ZxX3RhJQKcmOk_VQ
-
 ### Users create (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
@@ -22,40 +20,36 @@ Content-Type: application/json
 
 ### Photos Index
 GET http://localhost:3000/photos.json
-Authorization: Bearer {{jwt}}
-Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxNjY3MDN9.sOUWMTnsk1RhZwBjaUV0IanRHw6JXLL5bLC-_L3vkho
 
 ### Photos Show
-GET http://localhost:3000/photos/1.json
-Authorization: Bearer {{jwt}}
+GET http://localhost:3000/photos/2.json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxNjY3MDN9.sOUWMTnsk1RhZwBjaUV0IanRHw6JXLL5bLC-_L3vkho
 
 ### Photos create
 POST http://localhost:3000/photos.json
-Authorization: Bearer {{jwt}}
 Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxNjY3MDN9.sOUWMTnsk1RhZwBjaUV0IanRHw6JXLL5bLC-_L3vkho
 
 {
-  "image_url": "Test image url",
+  "image_url": "2nd test image url",
   "date": "10/10/2020",
-  "description": 480,
-  "user_id": 1
+  "description": "Test descrption"
 }
 
 ### Photos update
 PATCH http://localhost:3000/photos/2.json
-Authorization: Bearer {{jwt}}
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxNjY3MDN9.sOUWMTnsk1RhZwBjaUV0IanRHw6JXLL5bLC-_L3vkho
 
 {
  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeFM9JOXeqml4nCZzr4522iWeM-EAnkgkVjg&usqp=CAU",
   "date": "10/10/2020",
-  "description": "test description!!!!!!!!!!!!!!!!!!",
-  "user_id": 2
-  
+  "description": "test description!!!!!!!!!!!!!!!!!!"
 }
 
 ### Photos Destroy
 DELETE  http://localhost:3000/photos/1.json
-Authorization: Bearer {{jwt}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxNjY3MDN9.sOUWMTnsk1RhZwBjaUV0IanRHw6JXLL5bLC-_L3vkho
 Content-Type: application/json
