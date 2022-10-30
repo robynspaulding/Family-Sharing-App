@@ -39,17 +39,17 @@ Authorization:  Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxNjY3
 }
 
 ### Photos update
-PATCH http://localhost:3000/photos/2.json
+PATCH http://localhost:3000/photos/2\4.json
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxNjY3MDN9.sOUWMTnsk1RhZwBjaUV0IanRHw6JXLL5bLC-_L3vkho
 
 {
  "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeFM9JOXeqml4nCZzr4522iWeM-EAnkgkVjg&usqp=CAU",
   "date": "10/10/2020",
-  "description": "test description!!!!!!!!!!!!!!!!!!"
+  "description": "test description"
 }
 
 ### Photos Destroy
-DELETE  http://localhost:3000/photos/1.json
+DELETE  http://localhost:3000/photos/4.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjcxNjY3MDN9.sOUWMTnsk1RhZwBjaUV0IanRHw6JXLL5bLC-_L3vkho
 Content-Type: application/json
